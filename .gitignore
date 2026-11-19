@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+
+# Experiment outputs
+results/*
+!results/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
