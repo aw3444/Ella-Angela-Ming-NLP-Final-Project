@@ -12,7 +12,7 @@ from src.models.standard import build_standard_detector
 MODEL_NAME = "answerdotai/ModernBERT-base"
 
 
-def train_standard_detector(train_dataset, val_dataset):
+def train_standard_detector(train_dataset, val_dataset, max_steps=-1):
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = build_standard_detector(MODEL_NAME)
 
@@ -32,6 +32,7 @@ def train_standard_detector(train_dataset, val_dataset):
         save_total_limit=2,
         seed=123,
         report_to="none",
+        max_steps=max_steps
     )
 
     trainer = Trainer(
