@@ -1,0 +1,109 @@
+{
+  "counts": {
+    "dev/ALL": 1506,
+    "dev/Data2txt": 528,
+    "dev/QA": 504,
+    "dev/Summary": 474,
+    "test/ALL": 2700,
+    "test/Data2txt": 900,
+    "test/QA": 900,
+    "test/Summary": 900,
+    "train/ALL": 13584,
+    "train/Data2txt": 4770,
+    "train/QA": 4530,
+    "train/Summary": 4284
+  },
+  "response_level_rate": {
+    "dev/ALL": 0.4422,
+    "dev/Data2txt": 0.7102,
+    "dev/QA": 0.2817,
+    "dev/Summary": 0.3143,
+    "test/ALL": 0.3493,
+    "test/Data2txt": 0.6433,
+    "test/QA": 0.1778,
+    "test/Summary": 0.2267,
+    "train/ALL": 0.4457,
+    "train/Data2txt": 0.6918,
+    "train/QA": 0.3139,
+    "train/Summary": 0.3112
+  },
+  "char_level_rate": {
+    "dev/ALL": 0.0586,
+    "dev/Data2txt": 0.0567,
+    "dev/QA": 0.0868,
+    "dev/Summary": 0.0304,
+    "test/ALL": 0.0407,
+    "test/Data2txt": 0.0402,
+    "test/QA": 0.0536,
+    "test/Summary": 0.0292,
+    "train/ALL": 0.0548,
+    "train/Data2txt": 0.0484,
+    "train/QA": 0.0872,
+    "train/Summary": 0.031
+  },
+  "answer_chars_mean": {
+    "dev/ALL": 802.8,
+    "dev/Data2txt": 1020.7,
+    "dev/QA": 701.1,
+    "dev/Summary": 668.3,
+    "test/ALL": 775.9,
+    "test/Data2txt": 994.3,
+    "test/QA": 649.6,
+    "test/Summary": 683.7,
+    "train/ALL": 801.4,
+    "train/Data2txt": 998.0,
+    "train/QA": 692.2,
+    "train/Summary": 698.1
+  },
+  "prompt_chars_mean": {
+    "dev/ALL": 2494.6,
+    "dev/Data2txt": 2734.7,
+    "dev/QA": 1604.2,
+    "dev/Summary": 3173.8,
+    "test/ALL": 2602.1,
+    "test/Data2txt": 2807.0,
+    "test/QA": 1688.6,
+    "test/Summary": 3310.8,
+    "train/ALL": 2599.7,
+    "train/Data2txt": 2752.6,
+    "train/QA": 1674.9,
+    "train/Summary": 3407.2
+  },
+  "label_types": {
+    "train": {
+      "Evident Conflict": 4247,
+      "Evident Baseless Info": 4938,
+      "Subtle Baseless Info": 2117,
+      "Subtle Conflict": 169
+    },
+    "dev": {
+      "Evident Baseless Info": 561,
+      "Evident Conflict": 458,
+      "Subtle Conflict": 16,
+      "Subtle Baseless Info": 250
+    },
+    "test": {
+      "Evident Conflict": 619,
+      "Evident Baseless Info": 738,
+      "Subtle Conflict": 16,
+      "Subtle Baseless Info": 160
+    }
+  },
+  "quality": {
+    "train": {
+      "good": 13445,
+      "truncated": 27,
+      "incorrect_refusal": 112
+    },
+    "dev": {
+      "good": 1497,
+      "incorrect_refusal": 8,
+      "truncated": 1
+    },
+    "test": {
+      "good": 2675,
+      "incorrect_refusal": 24,
+      "truncated": 1
+    }
+  }
+}
