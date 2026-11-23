@@ -1,0 +1,5 @@
+{
+  "best_checkpoint": "checkpoints/standard/checkpoint-5094",
+  "best_dev_f1": 0.5573022312373225,
+  "total_steps": 10188
+}
