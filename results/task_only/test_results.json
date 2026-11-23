@@ -1,0 +1,56 @@
+{
+  "threshold": 0.35,
+  "ALL": {
+    "n": 2700,
+    "n_hallucinated": 943,
+    "response": {
+      "precision": 0.6433333333333333,
+      "recall": 0.6139978791092259,
+      "f1": 0.6283233857840478
+    },
+    "auroc": 0.703699668829605,
+    "span": null
+  },
+  "QA": {
+    "n": 900,
+    "n_hallucinated": 160,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": null
+  },
+  "Summary": {
+    "n": 900,
+    "n_hallucinated": 204,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": null
+  },
+  "Data2txt": {
+    "n": 900,
+    "n_hallucinated": 579,
+    "response": {
+      "precision": 0.6433333333333333,
+      "recall": 1.0,
+      "f1": 0.7829614604462475
+    },
+    "auroc": 0.5,
+    "span": null
+  },
+  "TASK_MACRO": {
+    "response": {
+      "precision": 0.21444444444444444,
+      "recall": 0.3333333333333333,
+      "f1": 0.2609871534820825
+    },
+    "span": null,
+    "auroc": 0.5
+  }
+}
