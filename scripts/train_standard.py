@@ -77,6 +77,20 @@ def main():
         output_dir=str(output_dir),
         batch_size=args.batch_size,
     )
+    
+    history_path = output_dir / "training_history.json"
+
+    with open(history_path, "w") as f:
+        json.dump(trainer.state.log_history, f, indent=2)
+        
+    summary = {
+        "best_checkpoint": trainer.state.best_model_checkpoint,
+        "best_metric": trainer.state.best_metric,
+        "global_step": trainer.state.global_step,
+    }
+
+    with open(output_dir / "training_summary.json", "w") as f:
+        json.dump(summary, f, indent=2)
 
     metrics = trainer.evaluate()
     print("Final validation metrics:", metrics)
