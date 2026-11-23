@@ -15,10 +15,10 @@ __pycache__/
 .idea/
 
 # Datasets
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+# data/raw/*
+# !data/raw/.gitkeep
+# data/processed/*
+# !data/processed/.gitkeep
 
 # Model checkpoints
 *.pt
@@ -28,8 +28,8 @@ data/processed/*
 checkpoints/
 
 # Experiment outputs
-results/*
-!results/.gitkeep
+# results/*
+# !results/.gitkeep
 
 # Jupyter
 .ipynb_checkpoints/

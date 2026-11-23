@@ -1,0 +1,78 @@
+{
+  "threshold": 0.5,
+  "ALL": {
+    "n": 2700,
+    "n_hallucinated": 943,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "token_accuracy": 0.9591847937967474,
+    "accuracy": 0.6507407407407407
+  },
+  "QA": {
+    "n": 900,
+    "n_hallucinated": 160,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "Summary": {
+    "n": 900,
+    "n_hallucinated": 204,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "Data2txt": {
+    "n": 900,
+    "n_hallucinated": 579,
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5,
+    "span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "TASK_MACRO": {
+    "response": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "auroc": 0.5
+  }
+}
