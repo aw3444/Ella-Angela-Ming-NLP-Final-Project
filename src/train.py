@@ -11,16 +11,24 @@ from src.models.standard import build_standard_detector
 
 MODEL_NAME = "answerdotai/ModernBERT-base"
 
-
-def train_standard_detector(train_dataset, val_dataset, max_steps=-1):
+def train_standard_detector(
+    train_dataset,
+    val_dataset,
+    max_steps=-1,
+    output_dir="checkpoints/standard",
+    batch_size=4
+):
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = build_standard_detector(MODEL_NAME)
 
     args = TrainingArguments(
-        output_dir="checkpoints/standard",
+        output_dir=output_dir,
+        per_device_train_batch_size=batch_size,
+        per_device_eval_batch_size=batch_size,
+        gradient_accumulation_steps=2,
+        logging_steps=10,
+        logging_first_step=True,
         learning_rate=1e-5,
-        per_device_train_batch_size=4,
-        per_device_eval_batch_size=4,
         num_train_epochs=6,
         weight_decay=0.01,
         lr_scheduler_type="constant",
@@ -31,6 +39,7 @@ def train_standard_detector(train_dataset, val_dataset, max_steps=-1):
         greater_is_better=True,
         save_total_limit=2,
         seed=123,
+        data_seed=123,
         report_to="none",
         max_steps=max_steps
     )
