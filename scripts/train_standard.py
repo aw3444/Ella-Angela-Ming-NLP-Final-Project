@@ -52,7 +52,7 @@ def main():
     parser.add_argument("--train_limit", type=int, default=None)
     parser.add_argument("--val_limit", type=int, default=None)
     parser.add_argument("--max_steps", type=int, default=-1)
-    parser.add_argument("--batch_size", type=int, default=4)
+    parser.add_argument("--batch_size", type=int, default=2)
 
     args = parser.parse_args()
 

@@ -16,7 +16,7 @@ def train_standard_detector(
     val_dataset,
     max_steps=-1,
     output_dir="checkpoints/standard",
-    batch_size=4
+    batch_size=2
 ):
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = build_standard_detector(MODEL_NAME)
@@ -25,7 +25,7 @@ def train_standard_detector(
         output_dir=output_dir,
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
-        gradient_accumulation_steps=2,
+        gradient_accumulation_steps=4,
         logging_steps=10,
         logging_first_step=True,
         learning_rate=1e-5,
